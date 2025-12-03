@@ -19050,6 +19050,11 @@ a.btn.btn-style.btn-banner:hover {
     object-fit: cover;
 }
 
+.img-same-height-2 {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
 
 /*--//banner-w3l-media-sec--*/
 @media (max-width: 1280px) {
