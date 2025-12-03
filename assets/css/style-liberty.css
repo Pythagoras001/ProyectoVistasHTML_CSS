@@ -602,6 +602,13 @@ progress {
     content: "— "
 }
 
+.mid-slider-content img {
+    height: 400px;       /* El alto que quieras */
+    object-fit: cover;   /* Recorta para mantener estética */
+    width: 100%;         /* Que ocupe todo el contenedor */
+    border-radius: 10px; /* Opcional */
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto
@@ -19036,6 +19043,13 @@ a.btn.btn-style.btn-banner:hover {
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
 }
+
+.img-same-height {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 /*--//banner-w3l-media-sec--*/
 @media (max-width: 1280px) {
