@@ -75,7 +75,7 @@ resource "aws_instance" "miserver" {
   rm -rf /var/www/html/*
   git clone https://github.com/Pythagoras001/ProyectoVistasHTML_CSS.git /tmp/proyecto
 
-  cp -r /tmp/proyecto/Frontend/src/* /var/www/html/
+  cp -r /tmp/proyecto/docs/* /var/www/html/
   chown -R www-data:www-data /var/www/html
   chmod -R 755 /var/www/html
   rm -f /var/www/html/index.nginx-debian.html
