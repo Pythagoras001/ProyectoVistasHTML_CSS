@@ -69,27 +69,16 @@ resource "aws_instance" "miserver" {
   #!/bin/bash
   set -e
 
-  # Actualizar paquetes
   apt-get update -y
   apt-get install -y nginx git
 
-  # Limpiar la carpeta web
   rm -rf /var/www/html/*
-
-  # Clonar el repositorio en /tmp
   git clone https://github.com/Pythagoras001/ProyectoVistasHTML_CSS.git /tmp/proyecto
 
-  # Copiar solo la carpeta Frontend al directorio de Nginx
   cp -r /tmp/proyecto/Frontend/src/* /var/www/html/
-
-  # Asegurar permisos correctos
   chown -R www-data:www-data /var/www/html
   chmod -R 755 /var/www/html
-
-  # Borrar archivo default de nginx si existe
   rm -f /var/www/html/index.nginx-debian.html
-
-  # Iniciar nginx
   systemctl enable nginx
   systemctl restart nginx
 

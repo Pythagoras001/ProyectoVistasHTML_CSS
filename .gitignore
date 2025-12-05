@@ -2,20 +2,16 @@
 ## TERRAFORM (Infra/)
 ##############################
 
-# Carpeta con plugins del provider
 .terraform/
 
-# Archivos de estado (NUNCA subirlos)
 terraform.tfstate
 terraform.tfstate.backup
 *.tfstate
 *.tfstate.backup
 
-# Archivos de variables sensibles
 terraform.tfvars
 *.tfvars
 
-# Archivos auto-generados
 crash.log
 override.tf
 override.tf.json
@@ -26,29 +22,21 @@ override.tf.json
 ## DOCKER
 ##############################
 
-# Logs, imágenes, volúmenes temporales
 *.log
 *.tar
 *.img
-
-# Carpeta de datos persistentes si existiera
 docker-data/
-
-# Archivos locales opcionales
 docker-compose.override.yml
 
 ##############################
 ## VSCODE
 ##############################
-
 .vscode/
 *.code-workspace
 
 ##############################
 ## FRONTEND (no ignora HTML/CSS)
 ##############################
-
-# Si algún día usas npm:
 node_modules/
 dist/
 build/
@@ -57,27 +45,21 @@ build/
 ## SISTEMAS OPERATIVOS
 ##############################
 
-# Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# Linux swap files
 *.swp
 
 ##############################
 ## OTROS
 ##############################
-
-# Entornos virtuales (Python)
 venv/
 .env/
 .env.*
 
-# Archivos de backup temporales
 *~
