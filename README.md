@@ -34,32 +34,32 @@ Este proyecto fue realizado con fines académicos y de aprendizaje.
 
 ## Instrucciones de instalación / visualización
 
-# 1. Clonar el repositorio
+### 1. Clonar el repositorio
 git clone https://github.com/Pythagoras001/ProyectoVistasHTML_CSS.git
 cd ProyectoVistasHTML_CSS
 
-# 2. Configurar credenciales de AWS
-# (debes tener una cuenta de AWS previamente)
+### 2. Configurar credenciales de AWS
+### (debes tener una cuenta de AWS previamente)
 aws configure
-# Ingresar:
-# - AWS Access Key ID
-# - AWS Secret Access Key
-# - Región (ejemplo: us-east-1)
-# - Output format: json
+Ingresar:
+- AWS Access Key ID
+- AWS Secret Access Key
+- Región (ejemplo: us-east-1)
+- Output format: json
 
-# 3. Verificar que AWS CLI esté correctamente configurado
+### 3. Verificar que AWS CLI esté correctamente configurado
 aws sts get-caller-identity
 
-# 4. Ir al directorio donde están los manifiestos de Terraform
+### 4. Ir al directorio donde están los manifiestos de Terraform
 cd terraform
 
-# 5. Inicializar Terraform
+### 5. Inicializar Terraform
 terraform init
 
-# 6. Ver el plan de ejecución (opcional pero recomendado)
+### 6. Ver el plan de ejecución (opcional pero recomendado)
 terraform plan
 
-# 7. Aplicar la infraestructura en AWS
+### 7. Aplicar la infraestructura en AWS
 terraform apply
 
-# 8. Confirmar escribiendo 'yes' cuando Terraform lo solicite
+### 8. Confirmar escribiendo 'yes' cuando Terraform lo solicite
